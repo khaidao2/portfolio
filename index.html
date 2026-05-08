@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai Dao | Data Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Khai Dao, a Data Engineering Intern specializing in scalable data pipelines, real-time streaming, and automated crawlers.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav>
+        <div class="nav-content">
+            <div class="logo">KD<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <h2 class="reveal">Hi, I'm Khai Dao</h2>
+            <h1 class="reveal">Building Scalable <span class="gradient-text">Data Ecosystems</span></h1>
+            <p class="reveal">Data Engineering Intern passionate about real-time streaming, automated data collection, and cloud-native architectures.</p>
+            <div class="cta-group reveal">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a Data Engineering Intern with a focus on building robust, idempotent data pipelines. My expertise lies in orchestrating complex workflows using Airflow, transforming raw data with dbt, and managing real-time streams via Kafka and Spark.</p>
+                    <p>I enjoy solving the "deceptively simple" problems of data engineering, from handling late-arriving data to bypassing anti-bot mechanisms in high-scale crawlers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1: Music Pipeline -->
+                <div class="project-card" id="music-pipeline">
+                    <div class="project-image" id="img-music"></div>
+                    <div class="project-info">
+                        <h3>Real-time Music Analytics Pipeline</h3>
+                        <p>An end-to-end streaming architecture that ingests user events from Eventsim, processes them via Spark, and stores them in BigQuery for real-time analysis.</p>
+                        <div class="tech-stack">
+                            <span>Kafka</span>
+                            <span>Spark</span>
+                            <span>Airflow</span>
+                            <span>dbt</span>
+                            <span>BigQuery</span>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/khaidao2/music_stream_pipeline" class="btn-link" target="_blank">View Repository →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Job Crawler -->
+                <div class="project-card" id="job-crawler">
+                    <div class="project-image" id="img-crawler"></div>
+                    <div class="project-info">
+                        <h3>Automated Multi-Source Job Crawler</h3>
+                        <p>A production-ready metadata crawler for job listings (TopCV, etc.). Features intelligent pagination, rate-limiting, and automated schema-driven ingestion into a Lakehouse architecture.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Playwright</span>
+                            <span>Kafka</span>
+                            <span>Superset</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/khaidao2/jobs_crawler" class="btn-link" target="_blank">View Repository →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Orchestration</h3>
+                    <ul>
+                        <li>Apache Airflow</li>
+                        <li>dbt (Data Build Tool)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Streaming & Processing</h3>
+                    <ul>
+                        <li>Apache Kafka</li>
+                        <li>Apache Spark</li>
+                        <li>Apache Flink</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Storage & Cloud</h3>
+                    <ul>
+                        <li>Google BigQuery</li>
+                        <li>PostgreSQL / ClickHouse</li>
+                        <li>MinIO / GCS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li>Docker / Kubernetes</li>
+                        <li>Terraform (IaC)</li>
+                        <li>Python / Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>I'm always open to discussing data architecture or internship opportunities.</p>
+            <div class="social-links">
+                <a href="https://github.com/khaidao2" target="_blank">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:contact@example.com">Email</a>
+            </div>
+            <p class="copyright">&copy; 2026 Khai Dao. Built with passion for Data.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
