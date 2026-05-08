@@ -108,6 +108,28 @@ nav {
     background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
 }
 
+/* Profile Picture */
+.profile-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--accent-glow);
+}
+
 .hero-content h2 {
     font-size: 1.2rem;
     color: var(--accent);
@@ -270,12 +292,29 @@ section {
     border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
+.project-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
 .btn-link {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
-    transition: gap 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.secondary-link {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.secondary-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 /* Skills Section */
