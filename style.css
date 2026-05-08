@@ -27,6 +27,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 90px; /* Offset for fixed header */
     /* Noise and Grid background */
     background-image: 
         linear-gradient(var(--grid-color) 1px, transparent 1px),
@@ -38,6 +39,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset for fixed header */
 }
 
 body {
@@ -127,18 +129,20 @@ nav {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent);
-    box-shadow: 0 0 20px var(--accent-glow);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 40px var(--accent-dim);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--bg-alt);
+    z-index: 10;
 }
 
 .profile-pic:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px var(--accent-glow);
+    box-shadow: 0 0 60px var(--accent-dim);
 }
 
 .hero-content {
