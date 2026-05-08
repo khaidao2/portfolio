@@ -92,24 +92,58 @@
         <div class="container">
             <h2 class="section-title" data-text="Execution">Execution</h2>
             <div class="project-grid">
-                <div class="project-card reveal" id="film-pipeline">
-                    <div class="project-image" id="img-film"></div>
+                <!-- Project 1: Music Pipeline -->
+                <div class="project-card reveal" id="music-pipeline">
                     <div class="project-info">
-                        <h3>Film Data Pipeline</h3>
-                        <p>Web scraping system using <strong>Selenium</strong> to collect film data, processed via end-to-end ETL and stored in <strong>MongoDB</strong>.</p>
+                        <h3>Real-time Music Pipeline</h3>
+                        <p>Streaming architecture processing <strong>~50k events/sec</strong> via Spark & BigQuery with &lt;2s latency.</p>
                         <div class="tech-stack">
-                            <span>Python</span>
-                            <span>Selenium</span>
-                            <span>MongoDB</span>
-                            <span>ETL</span>
+                            <span>Kafka</span>
+                            <span>Spark</span>
+                            <span>Airflow</span>
+                            <span>BigQuery</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/khaidao2/music_stream_pipeline" class="btn-link" target="_blank">Repo →</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card reveal" id="data-analysis">
-                    <div class="project-image" id="img-stats"></div>
+
+                <!-- Project 2: Job Crawler -->
+                <div class="project-card reveal" id="job-crawler">
                     <div class="project-info">
-                        <h3>Statistical Data Analysis</h3>
-                        <p>Conducted descriptive statistical analysis using <strong>Excel</strong> and <strong>Stata</strong> to extract insights from raw datasets.</p>
+                        <h3>Multi-Source Job Crawler</h3>
+                        <p>Automated extraction of <strong>100k+ listings</strong> with 99.9% integrity and schema-driven ingestion.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Playwright</span>
+                            <span>Kafka</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/khaidao2/jobs_crawler" class="btn-link" target="_blank">Repo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Film Pipeline -->
+                <div class="project-card reveal" id="film-pipeline">
+                    <div class="project-info">
+                        <h3>Film Data Pipeline</h3>
+                        <p>Web scraping system using <strong>Selenium</strong> to collect film data, processed via end-to-end ETL.</p>
+                        <div class="tech-stack">
+                            <span>Selenium</span>
+                            <span>MongoDB</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Data Analysis -->
+                <div class="project-card reveal" id="data-analysis">
+                    <div class="project-info">
+                        <h3>Statistical Analysis</h3>
+                        <p>Conducted descriptive statistical analysis using <strong>Excel</strong> and <strong>Stata</strong> to extract insights.</p>
                         <div class="tech-stack">
                             <span>Excel</span>
                             <span>Stata</span>
