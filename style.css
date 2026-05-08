@@ -119,12 +119,13 @@ nav {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    padding: 120px 0 60px; /* Increased top padding */
+    background: radial-gradient(circle at 50% 50%, var(--accent-dim) 0%, transparent 70%);
 }
 
 /* Profile Picture */
