@@ -292,23 +292,27 @@ section {
 }
 
 .education-card {
-    background: var(--card-bg);
-    padding: 2.5rem;
-    border-radius: 24px;
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(16px);
+    background: var(--bg-alt);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    position: relative;
 }
 
-.education-card h3 {
-    color: var(--accent);
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
 }
 
 .edu-item {
     position: relative;
-    padding-left: 2rem;
-    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--accent);
 }
 
 .edu-year {
@@ -327,16 +331,27 @@ section {
 
 /* Experience Timeline */
 .experience-timeline {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .exp-item {
-    background: var(--card-bg);
+    background: var(--bg-alt);
     padding: 3rem;
-    border-radius: 24px;
-    border: 1px solid var(--glass-border);
-    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.exp-item::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid var(--accent);
+    border-left: 2px solid var(--accent);
 }
 
 .exp-header {
