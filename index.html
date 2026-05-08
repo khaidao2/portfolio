@@ -23,8 +23,9 @@
             <div class="logo">KD<span>.</span></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -33,29 +34,55 @@
     <header id="hero">
         <div class="hero-content">
             <div class="profile-container reveal">
-                <img src="assets/profile.jpg" alt="Khai Dao" class="profile-pic">
+                <img src="assets/profile.jpg" alt="Đào Thế Khải" class="profile-pic">
             </div>
-            <h2 class="reveal">Hi, I'm Khai Dao</h2>
-            <h1 class="reveal">Building Scalable <span class="gradient-text">Data Ecosystems</span></h1>
-            <p class="reveal">Data Engineering Intern passionate about real-time streaming, automated data collection,
-                and cloud-native architectures.</p>
+            <h2 class="reveal">Hi, I'm Đào Thế Khải</h2>
+            <h1 class="reveal">Aspiring <span class="gradient-text">Data Engineer</span></h1>
+            <p class="reveal">Ecommerce Major @ UEL | GPA 8.21/10<br>Passionate about building scalable data pipelines and workflow orchestration.</p>
             <div class="cta-group reveal">
                 <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Get In Touch</a>
+                <a href="assets/cv_khai_dao.pdf" class="btn secondary" download>Download CV</a>
+                <a href="#contact" class="btn outline">Get In Touch</a>
             </div>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">My Story</h2>
             <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a Data Engineering Intern with a focus on building robust, idempotent data pipelines. My
-                        expertise lies in orchestrating complex workflows using Airflow, transforming raw data with dbt,
-                        and managing real-time streams via Kafka and Spark.</p>
-                    <p>I enjoy solving the "deceptively simple" problems of data engineering, from handling
-                        late-arriving data to bypassing anti-bot mechanisms in high-scale crawlers.</p>
+                <div class="about-text reveal">
+                    <p>My journey in the data world began at the <strong>University of Economics and Law</strong>, where I combined my Ecommerce background with a deep-seated passion for data infrastructure.</p>
+                    <p>As a <strong>Data Engineer Trainee</strong>, I've spent my time building robust "pipes" for data to flow through—automating ingestion for thousands of records and orchestrating complex workflows using Airflow. I thrive on the "art of the pipeline": making raw, messy data clean, structured, and ready for impact.</p>
+                </div>
+                <div class="education-card reveal">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <span class="edu-year">Current</span>
+                        <h4>University of Economics and Law</h4>
+                        <p>Major in Ecommerce</p>
+                        <p class="gpa">GPA: <strong>8.21 / 10</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="exp-item reveal">
+                    <div class="exp-header">
+                        <h3>Data Engineer Trainee</h3>
+                        <span class="exp-company">Tech Portfolio</span>
+                    </div>
+                    <ul>
+                        <li>Designed <strong>Airflow pipelines</strong> to automate daily ingestion of 1,000+ records from APIs and web sources.</li>
+                        <li>Built and managed <strong>ETL workflows</strong> with DAG-based scheduling and dependency handling.</li>
+                        <li>Transformed raw data into <strong>PostgreSQL data warehouse</strong> layers (Staging, ODS, Data Marts).</li>
+                        <li>Implemented robust logging and error handling to ensure 99.9% pipeline reliability.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -63,52 +90,30 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Personal Projects</h2>
             <div class="project-grid">
-                <!-- Project 1: Music Pipeline -->
-                <div class="project-card" id="music-pipeline">
-                    <div class="project-image" id="img-music"></div>
+                <div class="project-card reveal" id="film-pipeline">
+                    <div class="project-image" id="img-film"></div>
                     <div class="project-info">
-                        <h3>Real-time Music Analytics Pipeline</h3>
-                        <p>High-throughput streaming architecture processing <strong>~50k events/sec</strong> with
-                            <strong>&lt;2s end-to-end latency</strong>. Ingests user events from Eventsim, processes via
-                            Spark, and stores in BigQuery for real-time analysis.</p>
+                        <h3>Film Data Pipeline</h3>
+                        <p>Web scraping system using <strong>Selenium</strong> to collect film data, processed via end-to-end ETL and stored in <strong>MongoDB</strong>.</p>
                         <div class="tech-stack">
-                            <span>Kafka</span>
-                            <span>Spark</span>
-                            <span>Airflow</span>
-                            <span>dbt</span>
-                            <span>BigQuery</span>
-                            <span>Terraform</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/khaidao2/music_stream_pipeline" class="btn-link"
-                                target="_blank">View Repository →</a>
-                            <a href="assets/architecture.png" class="btn-link secondary-link"
-                                target="_blank">Architecture Diagram ↗</a>
+                            <span>Python</span>
+                            <span>Selenium</span>
+                            <span>MongoDB</span>
+                            <span>ETL</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 2: Job Crawler -->
-                <div class="project-card" id="job-crawler">
-                    <div class="project-image" id="img-crawler"></div>
+                <div class="project-card reveal" id="data-analysis">
+                    <div class="project-image" id="img-stats"></div>
                     <div class="project-info">
-                        <h3>Automated Multi-Source Job Crawler</h3>
-                        <p>Production-ready crawler extracting <strong>100k+ job listings</strong> from 5+ sources
-                            (TopCV, etc.) with <strong>99.9% data integrity</strong>. Features intelligent pagination,
-                            rate-limiting, and schema-driven ingestion.</p>
+                        <h3>Statistical Data Analysis</h3>
+                        <p>Conducted descriptive statistical analysis using <strong>Excel</strong> and <strong>Stata</strong> to extract insights from raw datasets.</p>
                         <div class="tech-stack">
-                            <span>Python</span>
-                            <span>Playwright</span>
-                            <span>Kafka</span>
-                            <span>Superset</span>
-                            <span>PostgreSQL</span>
-                            <span>Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/khaidao2/jobs_crawler" class="btn-link" target="_blank">View
-                                Repository →</a>
+                            <span>Excel</span>
+                            <span>Stata</span>
+                            <span>Statistics</span>
                         </div>
                     </div>
                 </div>
@@ -116,40 +121,34 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="achievements" class="bg-alt">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Data Orchestration</h3>
-                    <ul>
-                        <li>Apache Airflow</li>
-                        <li>dbt (Data Build Tool)</li>
-                    </ul>
+            <h2 class="section-title">Awards & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achieve-card reveal">
+                    <div class="achieve-icon">🏆</div>
+                    <h3>Top 10</h3>
+                    <p>AIB Season 1</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Streaming & Processing</h3>
-                    <ul>
-                        <li>Apache Kafka</li>
-                        <li>Apache Spark</li>
-                        <li>Apache Flink</li>
-                    </ul>
+                <div class="achieve-card reveal">
+                    <div class="achieve-icon">💻</div>
+                    <h3>Top 24</h3>
+                    <p>Techcombank Hackathon</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Storage & Cloud</h3>
-                    <ul>
-                        <li>Google BigQuery</li>
-                        <li>PostgreSQL / ClickHouse</li>
-                        <li>MinIO / GCS</li>
-                    </ul>
+                <div class="achieve-card reveal">
+                    <div class="achieve-icon">📜</div>
+                    <h3>IELTS 6.5</h3>
+                    <p>English Proficiency</p>
                 </div>
-                <div class="skill-category">
-                    <h3>DevOps & Tools</h3>
-                    <ul>
-                        <li>Docker / Kubernetes</li>
-                        <li>Terraform (IaC)</li>
-                        <li>Python / Java</li>
-                    </ul>
+                <div class="achieve-card reveal">
+                    <div class="achieve-icon">🎨</div>
+                    <h3>UI/UX Certified</h3>
+                    <p>Design Foundation</p>
+                </div>
+                <div class="achieve-card reveal">
+                    <div class="achieve-icon">🤖</div>
+                    <h3>Digisea RPA</h3>
+                    <p>RPA Training Program</p>
                 </div>
             </div>
         </div>
@@ -158,13 +157,17 @@
     <footer id="contact">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
-            <p>I'm always open to discussing data architecture or internship opportunities.</p>
+            <p>Ready to build the next generation of data infrastructure.</p>
+            <div class="contact-details reveal">
+                <p>📍 Dĩ An, Bình Dương | 📞 <strong>0981746119</strong></p>
+            </div>
             <div class="social-links">
                 <a href="https://github.com/khaidao2" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/kh%E1%BA%A3i-%C4%91%C3%A0o-043035292/" target="_blank">LinkedIn</a>
                 <a href="mailto:daok257@gmail.com">Email</a>
+                <a href="assets/cv_khai_dao.pdf" download class="cv-link">Download CV</a>
             </div>
-            <p class="copyright">&copy; 2026 Khai Dao. Built with passion for Data.</p>
+            <p class="copyright">&copy; 2026 Đào Thế Khải. Built with passion for Data.</p>
         </div>
     </footer>
 
