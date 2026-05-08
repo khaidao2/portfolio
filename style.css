@@ -395,13 +395,21 @@ section {
 }
 
 .achieve-icon {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    filter: grayscale(1);
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.achieve-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 .achieve-card:hover .achieve-icon {
-    filter: grayscale(0);
+    color: var(--accent);
+    transform: scale(1.1);
 }
 
 .achieve-card h3 {
